@@ -147,17 +147,26 @@ if(!empty($_POST['talab1']))
        
        // redirect vers save.php 
        
-       header("location:save.php");
+     
        
        
              
        ?>
-      <!--
-      ou bien en utilisant javascript
+
+
+
+
+
+
+
+
+
+      
+      <!-- ou bien en utilisant javascript   -->
          <script> 
             window.location="save.php";
          </script>
-      -->
+    
    <?php
    }
     
