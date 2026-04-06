@@ -132,7 +132,7 @@
 
 <?php      
 // traitement talab1 : 
-include_once './Traitement.php';
+include_once 'Traitement.php';
 if(!empty($_POST['talab1']))
 {
     
