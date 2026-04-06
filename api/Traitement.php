@@ -13,7 +13,7 @@ function Authentification($login,$password)
 }
 //II   Fonction Save :
 
-function Save($nom,$prenom,$ville,$tp,$des) 
+function Save($nom,$prenom,$ville) 
         {
    // 1- ouverture du fichier :
     

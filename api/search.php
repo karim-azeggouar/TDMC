@@ -19,7 +19,7 @@
 
  <BODY>
       <?php      
-     
+     include_once 'Traitement.php';
     
      
      ?>
@@ -107,7 +107,7 @@
 <section class="bg-dark p-2 text-white">
   <div class="mx-auto w-50">
     
-      <h2><a href="#">Afficher Tous</a></h2>
+      <h2><a href="search.php?cle=all">Afficher Tous</a></h2>
    
       
       <form action="search.php"  method="POST">
@@ -142,7 +142,7 @@ if(!empty($_POST['search']))
                       <th>Nom</th>
                       <th>Prénom</th>
                       <th>Ville</th>
-                      <th>Photo</th>
+                     
                     
                     </tr>
                   </thead>
@@ -151,7 +151,7 @@ if(!empty($_POST['search']))
                       <th>Nom 1</th>
                       <th>Prénom 1</th>
                       <th>Tanger</th>
-                      <th><img src="images/student.jfif"  width="100"  height="100"  /></th>
+                     
                     
                     </tr>
               
@@ -171,6 +171,19 @@ if(!empty($_POST['search']))
 
 
 // action afficher Tous :
+
+// action afficher Tous :
+if(!empty($_GET['cle']))
+{
+   /* 
+    $val=$_GET['cle'];
+    echo "Test valeur :  $val";
+   */ 
+    
+    
+  DispalyAll();
+    
+}
 
 
 

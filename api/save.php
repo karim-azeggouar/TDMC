@@ -134,9 +134,21 @@
 <?php      
 // action Enregistrer 
 
+if(!empty($_POST['Enregistrer']))
+{
+    
+    $nom=$_POST['nom'];
+    $prenom=$_POST['prenom'];
+    $ville=$_POST['ville'];
+    
+  
+    Save($nom, $prenom, $ville);
+    
+}
 
 
 ?>
+
 
 
 </div>
